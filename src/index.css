@@ -1,0 +1,203 @@
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid blue; */
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #d3d3d3 !important;
+  /* height: 100%; 
+  overflow: hidden; */
+}
+.center {
+  width: 100%;
+  height: 90vh;
+  padding: 5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.logo {
+  width: 50px;
+  position: fixed;
+  left: 0.5em;
+}
+.logologin {
+  width: 45%;
+}
+@media screen and (max-width: 599px) {
+  .logologin {
+    width: 200px;
+  }
+}
+
+.mainContent {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.active {
+  background-color: #2598ca48;
+}
+
+.tableHead {
+  text-align: center !important;
+}
+
+::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+::-webkit-scrollbar-track {
+  /* background-color: rgba(255, 0, 0, 1); */
+  border-radius: 100vw;
+  margin-block: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2599ca;
+  border-radius: 100vw;
+}
+.dashboardHeadings {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: black;
+}
+.iconsDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.centerIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.disabledButton {
+  background-color: '#2196f3 !important';
+  color: '#fff !important';
+  opacity: '0.6';
+}
+.sensorContainer {
+  border: 3px solid black;
+  border-radius: 1vh;
+  background: #cccccc;
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  font-size: 2vh;
+}
+.senserContainerVal {
+  color: black;
+  font-size: 0.7em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 9999;
+}
+.colorA {
+  color: #33bd1d;
+}
+.colorB {
+  color: #fbeb06;
+}
+.colorC {
+  color: #f08c00;
+}
+.colorD {
+  color: #eb0630;
+}
+.colorE {
+  color: #ff0000;
+}
+.colorF {
+  color: #6b6364;
+}
+.gray {
+  color: gray;
+}
+.centerTable {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2vh 0;
+  overflow: hidden;
+}
+
+.indicator {
+  width: 2.7vh;
+  height: 2.7vh;
+}
+
+.cSearch input {
+  height: 100%;
+  /* padding: 0 !important;
+  padding-left: 12px !important; */
+}
+.cSearch input,
+.cSearch div {
+  height: 100%;
+}
+.datePicker svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+.formContainer {
+  margin: 1vh;
+  padding: 2vh;
+  border: 2px solid black;
+  border-radius: 1vh;
+}
+
+.alert {
+  height: 35px;
+  width: 140px;
+  padding-inline: 7px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .MuiAlert-icon {
+  font-size: inherit !important;
+  margin-right: 5px !important;
+} */
+@media (max-width: 600px) {
+  .alert {
+    font-size: 1.4vh !important;
+    width: 125px;
+  }
+}
+
+.border {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  height: fit-content;
+}
+.border:nth-child(2) {
+  padding-block: 15px;
+}
+.tabPanel {
+  flex: 1;
+  padding: 2rem;
+}
+@media (max-width: 600px) {
+  .tabPanel {
+    flex: 1;
+    padding: 0;
+  }
+}
