@@ -16,6 +16,19 @@ Admin dashboard for SecureMyAir  manage customers, machines, installations, ins
 - Node.js (v14 or higher)
 - npm or yarn
 
+## Environment
+
+Copy `.env.example` to `.env` and set your backend URL:
+
+```bash
+# .env
+REACT_APP_BACKEND_URL=http://localhost:8000
+```
+
+- **Development:** Use `http://localhost:8000` or your local API URL.
+- **Production:** Set `REACT_APP_BACKEND_URL` to your API host (e.g. `https://api.securemyair.com`) when building.
+- For local overrides without committing, use `.env.local` (it is gitignored).
+
 ## Getting Started
 
 ### Install dependencies
